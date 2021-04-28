@@ -1,0 +1,112 @@
+/*****Galeria de Imagenes*****/
+h1 {
+text-align: center;
+color:darkblue;
+font-size: 20px;
+padding-top: 1%;
+font-family: monospace;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    
+}
+.galeriaContenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 25%;
+    grid-gap: 0.5%;
+    width: 80%;
+    height: 90vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1vh;
+    
+}
+.galeriaImagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.galeriaImg:nth-child(1){
+    grid-column-start: span 2;
+}
+.galeriaImg:nth-child(6){
+    grid-column-start: span 2;
+}
+.galeriaImg:nth-child(7){
+    grid-column-start: span 3;
+}
+.galeriaImg:nth-child(8){
+    grid-row-start: span 2;
+}
+.galeriaImg:nth-child(10){
+    grid-column-start: span 2;
+}
+.galeriaImg:nth-child(11){
+    grid-column-start: span 2;
+}
+.galeriaImg:nth-child(12){
+    grid-column-start: span 2;
+    
+}
+/*****Responsive*****/
+
+@media (min-width:768px) {
+    h1 {
+        text-align: center;
+        color:black;
+        font-size: 40px;
+        padding-top: 1%;
+        font-family: sans-serif;
+}
+    .galeriaContenedor {    
+        grid-template-columns: repeat(5, 1fr);
+        background-color:;
+        grid-gap: 1%;
+        
+}
+    .galeriaImg:nth-child(1){
+        grid-column-start: span 3;
+}
+    .galeriaImg:nth-child(2){
+        grid-column-start: span 2;
+}
+    .galeriaImg:nth-child(3){
+        grid-column-start: span 1;
+}
+    .galeriaImg:nth-child(4){
+        grid-column-start: span 2;
+}    
+
+    .galeriaImg:nth-child(5){
+        grid-column-start: span 2;
+}   
+    .galeriaImg:nth-child(6){
+        grid-column-start: span 2;
+}
+    .galeriaImg:nth-child(7){
+        grid-column-start: span 2;
+}
+    .galeriaImg:nth-child(8){
+        grid-row-start: span 2;
+}
+        .galeriaImg:nth-child(9){
+        grid-column: span 2;
+}
+    .galeriaImg:nth-child(10){
+        grid-column-start: span 2;
+}
+    .galeriaImg:nth-child(11){
+        grid-column-start: span 3;
+}
+    .galeriaImg:nth-child(12){
+        grid-column-start: span 2;
+    
+}
+/*****Fin Galeria de Imagenes*****/
